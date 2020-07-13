@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    padding: 10px;
+    overflow: auto;
+}
+
+html, body {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 14px;
+    background-color: #333f4b;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 150%;
+    flex-grow: 3;
+}
+
+h2 {
+    color: #cc7c54;
+    margin: 2em;
+}
+
+h3 {
+    color: #cc7c54;
+}
+
+ul a:hover {
+    font-weight: bold;
+    color: antiquewhite;
+}
+
+table {
+    width: 100%;
+    border: 1px solid antiquewhite;
+    text-align: center;
+    color: black;
+}
+
+#profile {
+    text-align: center;
+}
+
+.profile img {
+    border-radius: 4px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.profile header {
+    text-align: justify;
+}
+
+.profile figcaption {
+    text-align: center;
+    color: black;
+}
+
+.featured-img {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 10px;
+    background-color: #475868;
+}
+
+#content article {
+    text-align: justify;
+}
+
+header {
+    display: inline;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 15px;
+    background-color: #d93e10;
+    text-align: center;
+    color: white;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
+nav {
+    background-color: #e66523;
+    padding: 3px;
+    border-radius: 8px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 9998;
+}
+
+@media screen and (max-width: 1000px) {
+    nav {
+        z-index: 9998;
+    }
+}
+
+.kon {
+    max-height: 600px;
+    margin: auto;
+    padding: 30px;
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.box li {
+    background-color: #837E7C;
+    width: 120px;
+    height: 120px;
+    line-height: 0;
+    overflow: hidden;
+    border: 2px solid #666;
+    float: left;
+    margin-right: 70px;
+    position: relative;
+}
+
+.box li img {
+    width: 120px;
+    height: 120px;
+}
+
+.box li span {
+    display: block;
+    width: 120px;
+    height: 120px;
+    background-color: rgb(200, 200,200, 0.5);
+    position: absolute;
+    top: 0;
+    text-align: center;
+    line-height: 120px;
+    color: #333;
+    text-shadow: 1px 1px 1px #ddd;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.box li a:hover span {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.box {
+    margin: 20px;
+}
+
+.box li,
+.box li img,
+.box li span {
+    border-radius: 50%;
+}
+
+.clear {
+    clear: both;
+}
+
+@media screen and (max-width: 1000px) {
+    .kon {
+        width: 100%;
+        padding: 5px;
+    }
+    .box {
+        margin: auto;
+        padding: 10px;
+    }
+    .box li {
+        margin: 21px;
+    }
+}
+
+.overlai {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba (0, 0, 0, 0);
+    z-index: 9999;
+    transition: 0.8s;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.overlai:target {
+    width: auto;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.overlai img {
+    height: 100%;
+}
+
+.overlai .tutup {
+    position: absolute;
+    font-size: 50px;
+    top: 40px;
+    left: 71%;
+    color: #786D5F;
+    text-decoration: none;
+}
+
+.overlai .tutup:hover {
+    color: antiquewhite;
+}
+
+@media screen and (max-width: 1000px) {
+    .overlai img {
+        height: 50%;
+    }
+    .overlai .tutup {
+        font-size: 40px;
+        top: 60px;
+        left: 89%;
+    }
+    .overlai .tutup:hover {
+        color: antiquewhite;
+    }
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #d73a19;
+    text-align: center;
+}
+
+footer li {
+    display: inline;
+    list-style-type: none;
+    text-align: center;
+    margin-right: 60px;
+}
+
+footer li a {
+    text-decoration: none;
+    color: #333;
+    font-size: large;
+    padding: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+    footer {
+        text-align: justify;
+    }
+    footer li {
+        text-align: center;
+        margin-right: 5px;
+    }
+    footer li a {
+        font-size: medium;
+        padding: 25px;
+    }
+}
+
+#content {
+    float: left;
+    width: 70%;
+}
+
+aside {
+    float: right;
+    width: 30%;
+    padding-left: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+}
